@@ -1,0 +1,19 @@
+name: Deployment
+on: push
+paths: 
+    - 'github-actions/*'
+jobs: 
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: get code
+              uses: actions/checkout@v3
+            - name: install dependencies
+              uses: npm ci
+            - name: lint
+              uses: npm run lint
+            - name: test code
+              uses: npm run test
+            - name: build code
+              uses: npm run build
+            
