@@ -1,7 +1,8 @@
 name: Deployment
-on: push
-paths: 
-    - 'github-actions/*'
+on: 
+  push: 
+    paths: 
+      - 'github-actions/*'
 jobs: 
     deploy:
         runs-on: ubuntu-latest
