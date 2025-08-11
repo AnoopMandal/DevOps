@@ -67,6 +67,14 @@ build {
       "curl -LO https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256",
       "echo $(cat kubectl.sha256)  kubectl | sha256sum --check",
       "sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl",
+      "echo installing maven..........",
+      "curl -O https://dlcdn.apache.org/maven/maven-3/3.8.9/binaries/apache-maven-3.8.9-bin.zip",
+      "unzip apache-maven-3.8.9-bin.zip",
+      "echo 'export M2_HOME=/home/ec2-user/apache-maven-3.8.9' >> ~/.bash_profile",
+      "echo 'export M2=$M2_HOME/bin' >> ~/.bash_profile",
+      "echo 'export JAVA_HOME=/usr/lib/jvm/java-21-openjdk' >> ~/.bash_profile",
+      "echo 'export PATH=$M2:$PATH:$JAVA_HOME/bin' >> ~/.bash_profile",
+      "source ~/.bash_profile",
       "echo Installation complete. Best of luck.."
 
     ]
