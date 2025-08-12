@@ -6,7 +6,7 @@ on:
 
 jobs:
   test:
-    runs-on: packer
+    runs-on: self-hosted
     #needs: build  # Ensures test only runs after build succeedssss
     #adding
     steps:

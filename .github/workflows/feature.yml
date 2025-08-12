@@ -4,6 +4,7 @@ on:
     branches:
       - master 
       - BTS-12_CICD
+  workflow_dispatch:
       
 env:
         DOCKER_IMAGE: anooop/petapp:${{ github.sha }}
