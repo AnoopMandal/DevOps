@@ -35,7 +35,16 @@
       "artifact_id": "ap-south-1:ami-09ce3cda293d43588",
       "packer_run_uuid": "57688503-8697-cc31-5ff6-bc5fbfaa4e12",
       "custom_data": null
+    },
+    {
+      "name": "rhel10",
+      "builder_type": "amazon-ebs",
+      "build_time": 1755002384,
+      "files": null,
+      "artifact_id": "ap-south-1:ami-0d708f0565994dec0",
+      "packer_run_uuid": "2ff9b7e4-58e4-b582-e280-5b31071b2fdd",
+      "custom_data": null
     }
   ],
-  "last_run_uuid": "57688503-8697-cc31-5ff6-bc5fbfaa4e12"
+  "last_run_uuid": "2ff9b7e4-58e4-b582-e280-5b31071b2fdd"
 }
