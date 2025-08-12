@@ -1,0 +1,20 @@
+# .github/workflows/test.yml
+name: Test
+
+on:
+ workflow_call:
+
+jobs:
+  test:
+    runs-on: packer
+    #needs: build  # Ensures test only runs after build succeedssss
+    #adding
+    steps:
+      - name: Run Unit Tests
+        run: mvn test
+
+      # - name: Upload Test Results
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: test-results
+      #     path: target/test-classes/TEST-*.xml

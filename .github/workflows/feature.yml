@@ -19,7 +19,7 @@ jobs:
      secrets: inherit     
 
   test:
-    uses: ./.github/workflows/test.yml
+    uses: ./.github/workflows/test1.yml
     needs: sonar
     secrets: inherit  
 
