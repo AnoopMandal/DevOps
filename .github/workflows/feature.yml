@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    uses: AnoopMandal/DevOps/blob/BTS-12_CICD/.github/workflows/javabuild.yml
+    uses: ./.github/workflows/javabuild.yml
     secrets: inherit
   sonar:
      uses: ./.github/workflows/sonar.yml
