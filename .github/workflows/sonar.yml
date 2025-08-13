@@ -10,4 +10,4 @@ jobs:
     #needs: build  # Ensures Sonar runs after build succeeds
     steps:
       - name: SonarCloud Scan
-        run: mvn sonar:sonar -Dsonar.projectKey=AnoopMandal_DevOps -Dsonar.organization=AnoopMandal -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=7328fbe82e0ce9a720fa428a46b53497f747d86c
+        run: mvn sonar:sonar -Dsonar.projectKey=AnoopMandal_DevOps -Dsonar.organization=anoopmandal -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=7328fbe82e0ce9a720fa428a46b53497f747d86c
