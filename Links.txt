@@ -1,1 +1,0 @@
-https://docs.aws.amazon.com/awssupport/latest/user/service-limits.html
